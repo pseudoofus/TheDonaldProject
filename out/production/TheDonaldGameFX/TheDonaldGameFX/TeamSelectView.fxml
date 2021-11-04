@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TheDonaldGameFX.TeamSelectController">
+   <children>
+      <Text fx:id="winner" layoutX="143.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Winner" textAlignment="CENTER" wrappingWidth="314.97100830078125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="donald" layoutX="143.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donald" textAlignment="CENTER" wrappingWidth="314.97100830078125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="143.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select Your Teammate" textAlignment="CENTER" wrappingWidth="314.97100830078125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <HBox layoutX="20.0" layoutY="240.0" prefHeight="50.0" prefWidth="560.0">
+         <children>
+            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="186.0" text="ToggleButton">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="players" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="186.0" text="ToggleButton" toggleGroup="$players">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="186.0" text="ToggleButton" toggleGroup="$players">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </HBox>
+      <Button layoutX="241.0" layoutY="312.0" mnemonicParsing="false" onAction="#selectButtonPressed" prefHeight="62.0" prefWidth="118.0" text="Select">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
